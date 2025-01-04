@@ -1,0 +1,19 @@
+{
+  "name": "multiply-by-5-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "monday-sdk-js": "github:mondaycom/monday-sdk-js",
+    "mongoose": "^8.9.3"
+  }
+}
