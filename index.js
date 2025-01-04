@@ -4,7 +4,6 @@ require('dotenv').config();
 
 const mongooseConnection = require("./configs/mongoose");
 const webhookRouter = require("./routes/webhook");
-const updateRouter = require("./routes/update");
 
 const app = express();
 
@@ -20,7 +19,6 @@ app.get("/", async (req, res) => {
 
 // Routes
 app.use("/multiply", webhookRouter);
-app.use("/update", updateRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

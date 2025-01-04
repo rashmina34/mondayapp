@@ -20,7 +20,6 @@ router.post("/", async (req, res) => {
     }
 
     const { event } = req.body;
-    console.log(event, '<<<event');
 
     // Extract values from the event object
     const boardId = String(event.boardId);
