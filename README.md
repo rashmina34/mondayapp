@@ -8,8 +8,7 @@ MongoDB: A MongoDB instance is required for the module to interact with.
 
 Steps
 1. Clone the repository or copy the script file:
-    git clone https://github.com/your-repo/upsert-webhook.git
-    cd upsert-webhook
+    git clone https://github.com/rashmina34/mondayapp.git
 
 2. Install dependencies:
     npm install
