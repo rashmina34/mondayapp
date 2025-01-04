@@ -26,25 +26,6 @@ async function upsertWebHookInfo(data, fromCalculation = false) {
         });
 
         if (existingDocument) {
-            // // Update the specific column's value
-            // const result = await ColumnChange.findOneAndUpdate(
-            //     {
-            //         pulseId: data.pulseId,
-            //         boardId: data.boardId,
-            //         // "columns.columnId": data.columnId,
-            //     },
-            //     {
-            //         $set: {
-            //             ...data,
-            //             "columns.$.columnValue": columnEntry.columnValue,
-            //         },
-            //         $addToSet: { columns: { $each: columnsToAdd } },
-            //     },
-            //     { new: true } // Return the updated document
-            // );
-            // console.log("Column value updated:", result);
-            // return result;
-
             // Update the columns array by replacing matching columnId and adding new ones
             let updatedColumns = existingDocument.columns || [];
 
